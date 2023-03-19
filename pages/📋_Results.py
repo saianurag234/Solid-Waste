@@ -31,7 +31,8 @@ if 'image' in st.session_state:
 else:
     st.write("No image is found")
     
-    
+st.subheader(" ")
+
 back = st.button("Click here to try again")
 if back:
     switch_page("Upload Image")

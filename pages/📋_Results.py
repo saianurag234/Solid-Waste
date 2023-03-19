@@ -32,6 +32,7 @@ else:
     st.write("No image is found")
     
 st.subheader(" ")
+st.subheader(" ")
 
 back = st.button("Click here to try again")
 if back:

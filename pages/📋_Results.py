@@ -18,7 +18,7 @@ def import_n_pred(image_data,model):
 if 'image' in st.session_state:
     image = st.session_state['image']
     prediction = import_n_pred(image,model)
-    pred = int(prediction[0][0])
+    pred = prediction[0][0]
 
     st.image(image, use_column_width=True)
     

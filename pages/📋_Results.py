@@ -20,7 +20,7 @@ if 'image' in st.session_state:
     prediction = import_n_pred(image,model)
     pred = prediction[0][0]
 
-    st.image(image,  width=650)
+    st.image(image,  width=450)
     
     if(pred < 0.5):
         st.subheader("The waste is Organic and Bio-degradable")

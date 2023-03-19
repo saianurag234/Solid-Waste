@@ -9,6 +9,7 @@ st.subheader("Upload an Image")
 upload_file = st.file_uploader(" ")
 
 st.markdown("<h2 style='text-align: center;;'>or</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center;;'>st.button("Go back to Home")</h2>", unsafe_allow_html=True)
 
 st.subheader("Take a photo")
 camera_input = st.camera_input(" ")

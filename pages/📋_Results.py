@@ -17,9 +17,16 @@ def import_n_pred(image_data,model):
 
 if 'image' in st.session_state:
     image = st.session_state['image']
-    pred = import_n_pred(image,model)
-    st.image(image)
-    st.subheader(pred)
+    prediction = import_n_pred(image,model)
+    pred = prediction[0][0]
+
+    st.image(image, use_column_width=True)
+    
+    if(pred < 0.5):
+        st.subheader("The waste is Organic and Bio-degradable")
+    else:
+        st.subheader("The waste is Recyclable")
+       
 else:
     st.write("No image is found")
     

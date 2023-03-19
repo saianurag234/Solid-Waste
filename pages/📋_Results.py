@@ -22,3 +22,4 @@ if 'image' in st.session_state:
     st.subheader(pred)
 else:
     st.write("No image is found")
+    

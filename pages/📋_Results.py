@@ -5,6 +5,7 @@ import numpy as np
 import time
 import tensorflow as tf
 
+
 model = tf.keras.models.load_model('waste_vgg16.h5')
 
 def import_n_pred(image_data,model):
@@ -30,3 +31,7 @@ if 'image' in st.session_state:
 else:
     st.write("No image is found")
     
+    
+back = st.button("Click here to try again")
+if back:
+    switch_page("Upload Image")

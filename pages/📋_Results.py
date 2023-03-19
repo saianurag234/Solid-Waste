@@ -23,9 +23,9 @@ if 'image' in st.session_state:
     st.image(image,  width=450)
     
     if(pred < 0.5):
-        st.subheader("The waste is Organic and Bio-degradable")
+        st.title("The waste is Organic and Bio-degradable")
     else:
-        st.subheader("The waste is Recyclable")
+        st.title("The waste is Recyclable")
        
 else:
     st.write("No image is found")
